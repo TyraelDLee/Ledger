@@ -1,6 +1,10 @@
 package defaultPackage;
 
+import java.util.ArrayList;
+
 public class NormalBook extends Book{
+    private ArrayList<Item> items = new ArrayList<>();
+
     @Override
     public void setType(String type) {
 
@@ -13,7 +17,7 @@ public class NormalBook extends Book{
 
     @Override
     public void addItem(Item item) {
-
+        this.items.add(item);
     }
 
     @Override
